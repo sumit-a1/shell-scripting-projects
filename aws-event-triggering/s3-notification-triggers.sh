@@ -1,6 +1,20 @@
-#!/bin/bash
+#!/bin/sh
 
 set -x
+
+# sudo apt update -y && sudo apt install -y vim awscli jq zip git
+
+# ssh-keygen -t rsa -b 4096 -C "sumitjha1@outlook.com"
+# cat ~/.ssh/id_rsa.pub
+# eval $(ssh-agent -s)
+# ssh-add ~/.ssh/id_rsa
+# git clone git@github.com:sumit-a1/shell-scripting-projects.git
+# cd shell-scripting-projects/aws-event-triggering/
+# aws configure
+# aws s3 ls
+# ./s3-notification-triggers.sh
+
+
 
 # Store the AWS account ID in a variable
 aws_account_id=$(aws sts get-caller-identity --query 'Account' --output text)
